@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+::-webkit-scrollbar { 
+    width: 10px;
+}
+::-webkit-scrollbar-track { 
+    background: #1d1e20;
+}
+::-webkit-scrollbar-thumb { 
+    background: #555555;
+}
+::-webkit-scrollbar-thumb:hover { 
+    background: #555555;
+}
+a:link, a:visited { 
+    color: #FFF; 
+}
+
+body {
+    color: #FFF;
+    text-align: center;
+    background-color: #1d1e20;
+    font-family: 'Lato', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    user-select: none;
+}
+
+.border {
+    border: solid;
+    font-size: 17px;
+    border-left: 20px;
+    border-right: 20px;
+    border-radius: 10px;
+    border-color: #FFF;
+    display: inline-block;
+}
+
+.title {
+    color: #FFF;
+    text-decoration: underline;
+}
+.bild {
+    border-radius: 10px;
+}
+.copy-allowed {
+    user-select: text;
+}

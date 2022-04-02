@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+::-webkit-scrollbar { 
+    width: 10px;
+}
+::-webkit-scrollbar-track { 
+    background: #1d1e20;
+}
+::-webkit-scrollbar-thumb { 
+    background: #555555;
+}
+::-webkit-scrollbar-thumb:hover { 
+    background: #555555;
+}
+a:link, a:visited { 
+    color: #FFF; 
+}
+body { 
+    color: #FFF; 
+    text-align: center; 
+    background-color: #1d1e20;
+    font-family: 'Open Sans', sans-serif;
+    user-select: none;
+}
+.title { 
+    color: #FFF; 
+    text-decoration: underline;
+}
