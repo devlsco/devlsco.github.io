@@ -36,7 +36,7 @@ request.onreadystatechange = function () {
     text6.innerText = request.responseText.split(`"verifiedBot":`)[1].split(`,`)[0]
     text7.innerText = request.responseText.split(`"isAffiliate":`)[1].split(`,"`)[0]
     text8.innerText = request.responseText.split(`"isPartner":`)[1].split(`,"`)[0]
-    text9.innerText = request.responseText.split(`"bio":`)[1].split(`,`)[0]
+    text9.innerText = request.responseText.split(`"bio":"`)[1].split(`",`)[0]
     text10.innerText = request.responseText.split(`"banned":`)[1].split(`,"`)[0]
     if(request.responseText.split(`"banned":`)[1].split(`,"`)[0] === "true"){
         text10.innerText = `true - BanReason: ${request.responseText.split(`"banReason":"`)[1].split(`",`)[0]}`
