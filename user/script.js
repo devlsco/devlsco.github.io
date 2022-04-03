@@ -52,3 +52,8 @@ request2.onreadystatechange = function () {
     text13.innerText = request2.responseText.split(`"total":`)[1].split(`,`)[0]
     text14.innerText = request2.responseText.split(`"partners":`)[1].split(`}`)[0]
 };
+
+function openInNewTab() {
+    let url = "https://modlookup.3v.fi/u/" + text1.innerText
+    window.open(url, '_blank').focus();
+}
