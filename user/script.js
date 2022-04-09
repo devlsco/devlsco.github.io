@@ -21,7 +21,7 @@ function makeHttpObject() {
     else if ("ActiveXObject" in window) return new ActiveXObject("Msxml2.XMLHTTP");
 }
 
-let username = window.location.search.slice(6);
+let username = window.location.search.slice(2);
 
 let request = makeHttpObject();
 request.open("GET", `https://api.ivr.fi/v2/twitch/user/${username}`, true);
