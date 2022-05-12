@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 
+*{
+    margin: 3px;
+}
+
 ::-webkit-scrollbar {
     width: 10px;
 }
@@ -28,10 +32,22 @@ body {
 }
 .border {
     border: solid;
-    font-size: 15px;
-    border-radius: 10px;
+    font-style: italic;
+    border-radius: 5px;
     border-color: #FFF;
     display: inline-block;
+    padding: 20px;
+    border:5px solid rgba(62, 54, 54, 0.325);
+}
+.border2 {
+    border: solid;
+    font-style: italic;
+    border-radius: 5px;
+    border-color: #FFF;
+    display: inline-block;
+    padding-left: 100px;
+    padding-right: 100px;
+    border:5px solid rgba(62, 54, 54, 0.325);
 }
 .text-border {
     padding: 10px;
@@ -50,4 +66,10 @@ body {
 
 .underlined {
     text-decoration: underline;
+}
+.text {
+    margin: 3px;
+}
+.svg {
+    padding: 15px;
 }
