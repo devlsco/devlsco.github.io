@@ -34,15 +34,15 @@
                 src="./img/chat-colors.png" class="bild">
             <h5><a style="color: #FFF;" href="./img/msg-colors.png">4. Msg. Colors</a></h5> <img
                 src="./img/msg-colors.png" class="bild">
-            <div class="copy-allowed">
-                <h4>DeepSkyBlue,1,#333333,0,config:info start:[Info]</h4>
-                <h4>DeepSkyBlue,1,#333333,0,config:info start:[Notification]</h4>
-                <h4>White,1,#080B42,1,config:repeatedmsg</h4>
-                <h4>White,1,#006666,1,config:t|first-msg=1</h4>
-                <h4>White,1,#330033,1,config:info start:[AutoMod]</h4>
-                <h4>White,1,#003165,1,config:info start:[ModAction]</h4>
-                <h4>White,1,#990099,1,config:info start:[Points]</h4>
-            </div>
+                <div class="copy-allowed">
+<pre>White,1,#012929,1,config:t|first-msg=1
+White,1,Black,1,config:repeatedmsg
+DeepSkyBlue,1,#333333,0,config:info start:[Info]
+White,1,#990099,1,config:info start:[Points]
+White,1,#330033,1,config:info start:[AutoMod]
+White,1,#003165,1,config:info start:[ModAction]
+DeepSkyBlue,1,#333333,0,config:info start:[Notification]</pre>
+                </div>
             <h5><a style="color: #FFF;" href="./img/usercolors.png">5. Usercolors</a></h5> <img
                 src="./img/usercolors.png" class="bild">
             <h5><a style="color: #FFF;" href="./img/badges.png">6. Badges</a></h5> <img src="./img/badges.png"
@@ -89,69 +89,70 @@
             <h2 class="title">Custom Commands</h2>
             <div class="border">
                 <div class="copy-allowed">
-                    <h4>/Viewer /openUrl https://t.3v.fi/chatters/?ch=$1</h4>
-                    <h4>/bot /ban $$1 Bot-Account.</h4>
-                    <h4>/report /openUrl https://twitch.tv/$$1/report</h4>
-                    <h4>/modlookup /openUrl https://modlookup.3v.fi/u/$$1</h4>
-                    <h4>/user /openUrl https://www.twitch.tv/popout/$(chan)/viewercard/$$1?popout=</h4>
-                    <h4>/remotes /chain /refresh ffz|/refresh bttvemotes|/refresh emoticons|/refresh badges|/refresh
-                        ffzglobal
-                    </h4>
-                    <h4>/translate /openUrl
-                        https://translate.google.com/#view=home&op=translate&sl=auto&tl=en&text=$$urlencode($(msg))</h4>
-                    <h4>/modunlock /set spamProtection 95/30</h4>
-                    <h4>/modrelock /set spamProtection 18/30</h4>
-                    <h4>/checklock /get spamProtection</h4>
-                    <h4>/google /obenUrl https://www.google.com/search?$$urlencode($(msg))</h4>
+                    <pre>/modview /openUrl https://www.twitch.tv/moderator/$(chan)
+/accountage /echo [Info] $request(https://decapi.me/twitch/accountage/$$1?precision=8)
+/followage /echo [Info] $request(https://decapi.me/twitch/followage/$$2/$$1?precision=8)
+/bot /ban $$1 Likely-Bot.
+/bttv /openUrl https://betterttv.com/dashboard/emotes
+/checklock /get spamProtection
+/commands /openUrl https://fossabot.com/$$1/commands
+/dashboard /openUrl https://dashboard.twitch.tv/u/$(chan)/home
+/ffz /openUrl https://www.frankerfacez.com/
+/follower /echo [Info] $request(https://decapi.me/twitch/followcount/$$1)
+/lastfollowers /echo $$1's Last $$2 Followers are: $request(https://decapi.me/twitch/followers/$$1?count=$$2&direction=desc))
+/logs /openUrl https://www.twitch.tv/popout/moderator/$(chan)/mod-actions
+/modlookup /openUrl https://modlookup.3v.fi/u/$$1
+/predictions /openUrl https://www.twitch.tv/popout/moderator/$(chan)/predictions
+/pyramid /chain /say $1 |/say $1 $1|/say $1 $1 $1|/say $1 $1 $1 $1|/say $1 $1 $1 $1 $1|/say $1 $1 $1 $1|/say $1 $1 $1|/say $1 $1|/say $1
+/relockspam /set spamProtection 18/30
+/remotes /chain /refresh ffz|/refresh bttvemotes|/refresh emoticons|/refresh badges|/refresh ffzglobal
+/report /openUrl https://twitch.tv/$$1/report
+/translate /openUrl https://translate.google.com/#view=home&op=translate&sl=auto&tl=en&text=$$urlencode($(msg))
+/unbanrequest /openUrl https://www.twitch.tv/popout/moderator/$(chan)/unban-requests
+/unlockspam /set spamProtection 95/30
+/user /openUrl https://www.twitch.tv/popout/$(chan)/viewercard/$$1?popout=
+/viewers /echo [Info] $request(https://decapi.me/twitch/viewercount/$$1)</pre>
                 </div>
             </div>
             <h2 class="title">Channel Context Menu</h2>
             <div class="border">
                 <div class="copy-allowed">
-                    <h4>-</h4>
-                    <h4>@Games</h4>
-                    <h4>.Fortnite=!setgame Fortnite</h4>
-                    <h4>.-</h4>
-                    <h4>.Just Chatting=!setgame Just Chatting</h4>
-                    <h4>.-</h4>
-                    <h4>.Grand Theft Auto V=!setgame Grand Theft Auto V</h4>
-                    <h4>.-</h4>
-                    <h4>.Call of Duty: Warzone=!setgame Call of Duty: Warzone</h4>
-                    <h4>-</h4>
-                    <h4>@Emotes</h4>
-                    <h4>.FFZ=/openUrl https://www.frankerfacez.com/channel/$(chan)</h4>
-                    <h4>.-</h4>
-                    <h4>.7TV=/openUrl https://7tv.app/emotes?sortBy=popularity&page=0</h4>
-                    <h4>.-</h4>
-                    <h4>.BBTV=/openUrl https://betterttv.com/emotes/top</h4>
-                    <h4>-</h4>
-                    <h4>@Commands</h4>
-                    <h4>.Fossabot=/openUrl https://fossabot.com/$(chan)/commands</h4>
-                    <h4>.-</h4>
-                    <h4>.Ohbot=/openUrl https://ohbot.3v.fi/commands.html</h4>
-                    <h4>-</h4>
-                    <h4>@Dashboards</h4>
-                    <h4>.Fossabot=/openUrl https://fossabot.com/c/$(chan)/dashboard</h4>
-                    <h4>.-</h4>
-                    <h4>.Twitch=/openUrl https://dashboard.twitch.tv/u/$(chan)/stream-manager</h4>
-                    <h4>.-</h4>
-                    <h4>.Mod=/openUrl https://dashboard.twitch.tv/u/$(chan)/settings/moderation</h4>
-                    <h4>-</h4>
-                    <h4>Unban Request=/openUrl https://www.twitch.tv/popout/moderator/$(chan)/unban-requests</h4>
-                    <h4>Kanal Punkte=/openUrl https://www.twitch.tv/popout/moderator/$(chan)/reward-queue</h4>
-                    <h4>Predictions=/openUrl https://www.twitch.tv/popout/moderator/$(chan)/predictions</h4>
-                    <h4>-</h4>
+                    <pre>-
+@Emotes
+.FFZ=/openUrl https://www.frankerfacez.com/channel/$(chan)
+.-
+.7TV=/openUrl https://7tv.app/emotes?sortBy=popularity&page=0
+.-
+.BTTV=/openUrl https://betterttv.com/emotes/top
+-
+@Commands
+.Fossabot=/openUrl https://fossabot.com/$(chan)/commands
+.-
+.Ohbot=/openUrl https://ohbot.3v.fi/commands.html
+-
+@Dashboards
+.Fossabot=/openUrl https://fossabot.com/c/$(chan)/dashboard
+.-
+.Twitch=/openUrl https://dashboard.twitch.tv/u/$(chan)/stream-manager
+.-
+.Mod=/openUrl https://dashboard.twitch.tv/u/$(chan)/settings/moderation
+-
+Unban-request=/openUrl https://www.twitch.tv/popout/moderator/$(chan)/unban-requests
+-
+Reward-queue=/openUrl https://www.twitch.tv/popout/moderator/$(chan)/reward-queue
+-
+Predictions=/openUrl https://www.twitch.tv/popout/moderator/$(chan)/predictions
+-</pre>
                 </div>
             </div>
             <h2 class="title">Streams Context Menu</h2>
             <div class="border">
                 <div class="copy-allowed">
-                    <h4>-</h4>
-                    <h4>ModLookUp=/modlookup $$1</h4>
-                    <h4>Report=/report $$1</h4>
-                    <h4>Chatcard=/user $$1</h4>
-                    <h4>Translate=/openUrl
-                        https://translate.google.com/#view=home&op=translate&sl=auto&tl=en&text=$$urlencode($(msg))</h4>
+                    <pre>-
+ModLookUp=/modlookup $$1
+Report=/report $$1
+Chatcard=/user $$1
+Translate=/openUrl https://translate.google.com/#view=home&op=translate&sl=auto&tl=en&text=$$urlencode($(msg))</pre>
                 </div>
             </div>
             <h2 class="title">User Context Menu</h2>
@@ -159,27 +160,29 @@
             <h2 class="title">User Dialog Buttons</h2>
             <div class="border">
                 <div class="copy-allowed">
-                    <h4>@a1</h4>
-                    <h4>Delete[D]=/delete $(msg-id)</h4>
-                    <h4>1s[1], 10s[2], 30s[Q], 1m[E], 2m, 10m[W], 20m, 30m, 1h[4], 6h, 1d[5], 2d, 7d[6], 14d[7]</h4>
-                    <h4>@a2</h4>
-                    <h4>.German[G]=/timeout $$1 120 German Only, please!</h4>
-                    <h4>.Spam[S]=/timeout $$1 120 Stop repeating yourself!</h4>
-                    <h4>.BSG/META[B]=/timeout $$1 600 Kein Backseat/Meta Gaming!</h4>
-                    <h4>@a4</h4>
-                    <h4>./Ban[B]</h4>
-                    <h4>./UnBan[U]</h4>
-                    <h4>@a5</h4>
-                    <h4>.Ban/Report[V]=/chain /ban $$1|/report $$1</h4>
-                    <h4>@c5</h4>
-                    <h4>.ChatCard=/openUrl https://www.twitch.tv/popout/$(chan)/viewercard/$$1?popout=</h4>
-                    <h4>.Report=/openUrl https://twitch.tv/$$1/report</h4>
-                    <h4>.Modlookup=/openUrl https://modlookup.3v.fi/u/$$1</h4>
-                    <h4>.Translate[T]=/openUrl
-                        https://translate.google.com/#view=home&op=translate&sl=auto&tl=de&text=$$urlencode($(msg))</h4>
-                    <h4>@AutoMod</h4>
-                    <h4>.Approve=/Automod_approve</h4>
-                    <h4>.Deny=/Automod_deny</h4>
+                    <pre>@a1
+Delete[D]=/delete $(msg-id)
+1s[1], 10s[2], 30s[Q], 1m[E], 2m, 5m, 10m[W], 20m, 30m, 1h[4], 6h, 1d[5], 7d[6], 14d[7]
+@a2
+.German[G]=/timeout $$1 120 German/English Only, please!
+.English[F]=/timeout $$1 120 English Only, please!
+.Repeating[S]=/timeout $$1 60 Stop repeating yourself
+@a3
+./Ban[B]
+./UnBan[U]
+@a4
+.Ban/Report[V]=/chain /ban $$1|/report $$1
+@c1
+.Bann[T]=/ban $$1 $$input(Bann Reason)
+.Timeout[Z]=/timeout $$1 $$input(Timeout Length) $$input(Timeout Reason)
+@c2
+.Report=/openUrl https://twitch.tv/$$1/report
+.ChatCard=/openUrl https://www.twitch.tv/popout/$(chan)/viewercard/$$1?popout=
+.Modlookup=/openUrl https://modlookup.3v.fi/u/$$1
+.Translate[T]=/openUrl https://translate.google.com/#view=home&op=translate&sl=auto&tl=de&text=$$urlencode($(msg))
+@AutoMod
+.Approve=/Automod_approve
+.Deny=/Automod_deny</pre>
                 </div>
             </div>
             <h2 class="title">Selected Text Context Menu</h2>
