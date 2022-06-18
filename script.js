@@ -14,8 +14,12 @@ let request = makeHttpObject();
 request.open("GET", "https://modlookup.3v.fi/api/user-totals/lsco", true);
 request.send(null);
 request.onreadystatechange = function () {
-    text1.innerText = request.responseText.split(`"follows":`)[1].split(`,`)[0]
-    text2.innerText = request.responseText.split(`"views":`)[1].split(`,`)[0]
-    text3.innerText = request.responseText.split(`"total":`)[1].split(`,`)[0]
-    text4.innerText = request.responseText.split(`"partners":`)[1].split(`}`)[0]
+    let follows = request.responseText.split(`"follows":`)[1].split(`,`)[0]
+    let views = request.responseText.split(`"views":`)[1].split(`,`)[0]
+    let total = request.responseText.split(`"total":`)[1].split(`,`)[0]
+    let partners = request.responseText.split(`"partners":`)[1].split(`}`)[0]
+    text1.innerText = new Intl.NumberFormat('de-DE', { style: 'currency', currency: 'EUR' }).format(follows).replace(/,00\s?[\u20AC]/, "")
+    text2.innerText = new Intl.NumberFormat('de-DE', { style: 'currency', currency: 'EUR' }).format(views).replace(/,00\s?[\u20AC]/, "")
+    text3.innerText = new Intl.NumberFormat('de-DE', { style: 'currency', currency: 'EUR' }).format(total).replace(/,00\s?[\u20AC]/, "")
+    text4.innerText = new Intl.NumberFormat('de-DE', { style: 'currency', currency: 'EUR' }).format(partners).replace(/,00\s?[\u20AC]/, "")
 };
