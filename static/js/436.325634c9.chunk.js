@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkberry_free_material_react_cra=self.webpackChunkberry_free_material_react_cra||[]).push([[436],{1436:function(e,r,a){a.r(r);var c=a(184);r.default=()=>(0,c.jsx)("h1",{children:"Hello? .... Is there one?"})}}]);
+//# sourceMappingURL=436.325634c9.chunk.js.map
