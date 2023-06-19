@@ -23567,7 +23567,7 @@
                       },
                       children: [
                         (0, ge.jsx)(At.Z, {
-                          label: 'v1.0.3 Beta',
+                          label: 'v1.0.4 Beta',
                           disabled: !0,
                           color: 'secondary',
                           size: 'small',
@@ -23593,7 +23593,7 @@
                       },
                       children: [
                         (0, ge.jsx)(At.Z, {
-                          label: 'v1.0.3 Beta',
+                          label: 'v1.0.4 Beta',
                           disabled: !0,
                           color: 'secondary',
                           size: 'small',
