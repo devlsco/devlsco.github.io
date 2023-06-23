@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkberry_free_material_react_cra=self.webpackChunkberry_free_material_react_cra||[]).push([[436],{1436:function(e,r,a){a.r(r);var t=a(2791),c=a(184);r.default=()=>(0,c.jsxs)(t.Fragment,{children:[(0,c.jsx)("h1",{children:"Coming soon..."}),(0,c.jsx)("img",{src:"https://cdn.7tv.app/emote/6258d322131d4588262a8831/1x.webp",width:50,alt:"..."})]})}}]);
+//# sourceMappingURL=436.71313284.chunk.js.map
