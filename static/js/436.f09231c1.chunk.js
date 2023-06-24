@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkberry_free_material_react_cra=self.webpackChunkberry_free_material_react_cra||[]).push([[436],{1436:function(e,r,a){a.r(r);var t=a(4746),c=a(2791),s=a(1889),n=a(184);r.default=()=>((0,c.useEffect)((()=>{document.title="LsCo Software - Dashboard"}),[]),(0,n.jsx)(t.Z,{title:"Dashboard",children:(0,n.jsx)(s.ZP,{container:!0,spacing:2,alignItems:"center"})}))}}]);
+//# sourceMappingURL=436.f09231c1.chunk.js.map
