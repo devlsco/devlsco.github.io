@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkberry_free_material_react_cra=self.webpackChunkberry_free_material_react_cra||[]).push([[44],{1044:function(e,r,a){a.r(r);var c=a(2791);r.default=()=>((0,c.useEffect)((()=>{window.open(`${window.location.origin}/dashboard`,"_self")}),[]),null)}}]);
+//# sourceMappingURL=44.6097f7f6.chunk.js.map
